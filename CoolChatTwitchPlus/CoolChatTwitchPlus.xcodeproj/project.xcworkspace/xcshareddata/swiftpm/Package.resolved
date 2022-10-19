@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "twitch-chat",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/cocoatype/twitch-chat",
+      "state" : {
+        "revision" : "962e0cb5db304e3d01674c0385273b09efa64b81",
+        "version" : "0.0.2"
+      }
+    }
+  ],
+  "version" : 2
+}

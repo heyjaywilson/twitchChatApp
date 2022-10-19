@@ -11,6 +11,7 @@
 		372E514128FF889000465771 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372E514028FF889000465771 /* ContentView.swift */; };
 		372E514328FF889100465771 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 372E514228FF889100465771 /* Assets.xcassets */; };
 		372E514628FF889100465771 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 372E514528FF889100465771 /* Preview Assets.xcassets */; };
+		372E514F28FF89B500465771 /* TwitchChat in Frameworks */ = {isa = PBXBuildFile; productRef = 372E514E28FF89B500465771 /* TwitchChat */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				372E514F28FF89B500465771 /* TwitchChat in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = CoolChatTwitchPlus;
+			packageProductDependencies = (
+				372E514E28FF89B500465771 /* TwitchChat */,
+			);
 			productName = CoolChatTwitchPlus;
 			productReference = 372E513B28FF889000465771 /* CoolChatTwitchPlus.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = 372E513228FF889000465771;
+			packageReferences = (
+				372E514D28FF89B500465771 /* XCRemoteSwiftPackageReference "twitch-chat" */,
+			);
 			productRefGroup = 372E513C28FF889000465771 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -274,6 +282,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "CCT+";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,6 +310,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "CCT+";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -336,6 +346,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		372E514D28FF89B500465771 /* XCRemoteSwiftPackageReference "twitch-chat" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cocoatype/twitch-chat";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		372E514E28FF89B500465771 /* TwitchChat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 372E514D28FF89B500465771 /* XCRemoteSwiftPackageReference "twitch-chat" */;
+			productName = TwitchChat;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 372E513328FF889000465771 /* Project object */;
 }
