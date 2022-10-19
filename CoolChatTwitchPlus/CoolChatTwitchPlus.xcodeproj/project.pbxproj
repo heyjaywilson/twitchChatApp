@@ -15,6 +15,7 @@
 		372E515128FF956400465771 /* CCTChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372E515028FF956400465771 /* CCTChat.swift */; };
 		372E515328FF95C100465771 /* ChatMessage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372E515228FF95C100465771 /* ChatMessage+Extension.swift */; };
 		372E515628FF98F600465771 /* StringProtocol+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372E515528FF98F600465771 /* StringProtocol+Extensions.swift */; };
+		372E515828FF9B3E00465771 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372E515728FF9B3E00465771 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		372E515028FF956400465771 /* CCTChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTChat.swift; sourceTree = "<group>"; };
 		372E515228FF95C100465771 /* ChatMessage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatMessage+Extension.swift"; sourceTree = "<group>"; };
 		372E515528FF98F600465771 /* StringProtocol+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringProtocol+Extensions.swift"; sourceTree = "<group>"; };
+		372E515728FF9B3E00465771 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				372E514228FF889100465771 /* Assets.xcassets */,
 				372E514728FF889100465771 /* CoolChatTwitchPlus.entitlements */,
 				372E514428FF889100465771 /* Preview Content */,
+				372E515728FF9B3E00465771 /* Constants.swift */,
 			);
 			path = CoolChatTwitchPlus;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				372E513F28FF889000465771 /* CoolChatTwitchPlusApp.swift in Sources */,
 				372E515128FF956400465771 /* CCTChat.swift in Sources */,
 				372E515328FF95C100465771 /* ChatMessage+Extension.swift in Sources */,
+				372E515828FF9B3E00465771 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
