@@ -9,30 +9,6 @@
 //
 
 import SwiftUI
-import TwitchChat
-
-extension ChatMessage: Identifiable {
-    public var id: UUID {
-        UUID()
-    }
-}
-
-class CCTChat: ObservableObject {
-    @Published var lastChat: [ChatMessage] = []
-
-    let chat = TwitchChat(token: ProcessInfo.processInfo.environment["UserToken"]!, name: "mwilson_codes")
-
-    func startListening() async {
-        do {
-            for try await message in chat.messages {
-                print("message received")
-                lastChat.append(message)
-            }
-        } catch {
-            print(error)
-        }
-    }
-}
 
 struct ContentView: View {
     @StateObject var chat = CCTChat()
@@ -41,7 +17,11 @@ struct ContentView: View {
         VStack {
             Text("Chat")
             List(chat.lastChat) { chatMessage in
-                Text(chatMessage.text)
+                HStack {
+                    Text(chatMessage.sender)
+                        .foregroundColor(chatMessage.color)
+                    Text(chatMessage.text)
+                }
             }
         }.task {
             await chat.startListening()
